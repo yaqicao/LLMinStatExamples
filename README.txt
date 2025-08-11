@@ -12,6 +12,6 @@ This code leverages BioBERT embeddings to classify medical texts. It begins by c
 The dataset of 40 English case notes (20 from Internal Medicine and 20 from Surgery) used in biobert_classifier.py.
 【biobert-local】
 从hugging face上下载BioBERT为本地模型,包含：
-config.json、pytorch_model.bin、tokenizer_config.json、vocab
-Download BioBERT from Hugging Face as a local model, which includes:
-config.json、pytorch_model.bin、tokenizer_config.json、vocab
+config.json、pytorch_model.bin、tokenizer_config.json、vocab。而pytorch_model.bin由于文件太大，需自行从页面https://huggingface.co/dmis-lab/biobert-v1.1/tree/
+下载pytorch_model.bin至本地文件夹biobert-local里，即可在本地部署BioBERT模型。
+To obtain a local copy of the BioBERT model from Hugging Face, the following files should be downloaded: config.json, pytorch_model.bin, tokenizer_config.json, and vocab. Due to its large size, the pytorch_model.bin file must be downloaded manually from https://huggingface.co/dmis-lab/biobert-v1.1/tree/ and placed in the local directory biobert-local to enable local deployment of the BioBERT model.
